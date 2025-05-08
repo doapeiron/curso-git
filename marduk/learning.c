@@ -30,8 +30,15 @@ int main(void) {
 			if (j >= k) printf("#");
 			else printf(" ");
 		}
-		k--;
+		
+		printf("  ");
+		
+		for (int b = 0; b < BRICKS; b++) {
+				if (b > i) printf(" ");
+				else printf("#");
+		}
 		printf("\n");
+		k--;
 	}
 	
 	return 0;
