@@ -4,7 +4,7 @@
 #define BRICKS 8
 
 int main(void) {
-	int value = 5;
+	/*int value = 5;
 	
 	for (int i = 0; i <= MAX; i++) {
 		int product = value * i;
@@ -21,7 +21,7 @@ int main(void) {
 		printf("\n");
 	}
 	
-	printf("\n");
+	printf("\n");*/
 	
 	int k = BRICKS-1;
 	
@@ -34,11 +34,27 @@ int main(void) {
 		printf("  ");
 		
 		for (int b = 0; b < BRICKS; b++) {
-				if (b > i) printf(" ");
-				else printf("#");
+			if (b > i) printf(" ");
+			else printf("#");
 		}
-		printf("\n");
+		
+		printf("  ");
+		
+		for (int c = 0; c < BRICKS; c++) {
+			if (c >= k) printf("#");
+			else printf(" ");
+		}
+		
+		printf("  ");
+		
+		for (int d = 0; d < BRICKS; d++) {
+			if (d > i) printf(" ");
+			else printf("#");
+		}
+		
+		// FINAL
 		k--;
+		printf("\n");
 	}
 	
 	return 0;
