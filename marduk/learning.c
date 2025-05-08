@@ -10,5 +10,17 @@ int main(void) {
 		printf("%d x %d = %d\n", value, i, product);
 	}
 	
+	printf("\n");
+	
+	for (int i = 0; i < 8; i++) {
+		for (int j = 0; j < 8; j++) {
+			if (i >= j) printf("#");
+			else printf(" ");
+		}
+		printf("\n");
+	}
+	
+	printf("\n");
+	
 	return 0;
 }
