@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define MAX 10
+#define BRICKS 8
 
 int main(void) {
 	int value = 5;
@@ -12,8 +13,8 @@ int main(void) {
 	
 	printf("\n");
 	
-	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 8; j++) {
+	for (int i = 0; i < BRICKS; i++) {
+		for (int j = 0; j < BRICKS; j++) {
 			if (i >= j) printf("#");
 			else printf(" ");
 		}
@@ -21,6 +22,17 @@ int main(void) {
 	}
 	
 	printf("\n");
+	
+	int k = BRICKS-1;
+	
+	for (int i = 0; i < BRICKS; i++) {
+		for (int j = 0; j < BRICKS; j++) {
+			if (j >= k) printf("#");
+			else printf(" ");
+		}
+		k--;
+		printf("\n");
+	}
 	
 	return 0;
 }
